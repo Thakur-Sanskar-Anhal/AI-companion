@@ -60,7 +60,7 @@ export const CompanionForm = ({
 
     return (
         <div className=" h-full p-4 space-y-2 max-w-3xl mx-auto">
-            <form {...form}>
+            <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 pb-10">
                     <div className="space-y-2 w-full ">
                         <div>
@@ -89,7 +89,7 @@ export const CompanionForm = ({
                             )}
                         />
                 </form>
-            </form>
+            </Form>
         </div>
     )
 }
