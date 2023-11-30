@@ -28,6 +28,7 @@
     "eslint-config-next": "13.4.19",
     "lucide-react": "^0.279.0",
     "next": "13.4.19",
+    "next-cloudinary": "^5.10.0",
     "next-themes": "^0.2.1",
     "postcss": "8.4.30",
     "query-string": "^8.1.0",

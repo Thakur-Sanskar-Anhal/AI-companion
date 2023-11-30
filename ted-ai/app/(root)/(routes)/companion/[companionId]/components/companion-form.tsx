@@ -7,11 +7,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { Separator } from "@/components/ui/separator";
-
-interface CompanionFormProps {
-    initialData: Companion | null;
-    categories: Category[];
-}
+import { ImageUpload } from "@/components/image-upload";
 
 const formSchema = z.object({
     name: z.string().min(1, {
@@ -32,8 +28,12 @@ const formSchema = z.object({
     categoryId: z.string().min(1, {
         message: "Category is required."
     }),
-
 })
+
+interface CompanionFormProps {
+    initialData: Companion | null;
+    categories: Category[];
+}
 
 export const CompanionForm = ({
     categories,
@@ -62,7 +62,7 @@ export const CompanionForm = ({
         <div className=" h-full p-4 space-y-2 max-w-3xl mx-auto">
             <form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 pb-10">
-                    <div className="space-y-2 w-full col-span-2">
+                    <div className="space-y-2 w-full ">
                         <div>
                             <h3 className="text-lg font-medium">
                                 General Information 
@@ -73,17 +73,21 @@ export const CompanionForm = ({
                         </div>
                         <Separator className=" bg-primary/10"/>
                     </div>
-                    <FormField 
-                        name="src"
-                        render={({ field }) => (
-                            <FormItem className="flex flex-col items-center justify-center space-y-4 col-span-2">
+                       <FormField
+                            name="src"
+                            render={({ field }) => (
+                            <FormItem className="flex flex-col items-center justify-center space-y-4">
                                 <FormControl>
-                                    Image Upload components
+                                    <ImageUpload 
+                                        disabled={isLoading}
+                                        onChange={field.onChange}
+                                        value={field.value}
+                                    />
                                 </FormControl>
-                                <FormMessage/>
+                                <FormMessage />
                             </FormItem>
-                        )}
-                    />
+                            )}
+                        />
                 </form>
             </form>
         </div>
