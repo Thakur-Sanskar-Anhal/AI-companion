@@ -86,7 +86,7 @@ export const CompanionForm = ({
         try{
             if(initialData){
                 // Update companion
-                await axios.patch(`/api/companion/$(initianData.id)`,values)
+                await axios.patch(`/api/companion/${initialData.id}`,values)
             } else {
                 // Create companion
                 await axios.post("/api/companion",values)
