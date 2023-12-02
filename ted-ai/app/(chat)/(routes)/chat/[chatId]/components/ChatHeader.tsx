@@ -29,10 +29,14 @@ export const ChatHeader = ({
 
     const onDelete = async () => {
         try{
-            await axios.delete(`/api/companions/${companion.id}`);
+            await axios.delete(`/api/companion/${companion.id}`);
             toast({
                 description: "success"
             })
+
+            router.refresh();
+            router.push("/")
+
         } catch {
             toast({
                 description: "Something went wrong",
@@ -42,7 +46,7 @@ export const ChatHeader = ({
     }
 
     return(
-        <div className=" flex w-full justify-between items-center border-b border-primary/10 pb-4">
+        <div className=" flex w-full justify-between items-center border-b border-primary/10 pb-4 h-fit">
             <div className=" flex gap-x-2 items-center">
                 <Button
                 onClick={()=> {
