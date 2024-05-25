@@ -22,8 +22,6 @@
 
 # Home Page
 ![project ss](https://github.com/Thakur-Sanskar-Anhal/minor-project/assets/75941858/381a4861-0026-4e9d-8d6c-b1cd9d7d0c72)
-<br> <br>
-![image](https://github.com/Thakur-Sanskar-Anhal/minor-project/assets/75941858/da4fca45-6aa7-4dd7-bc3a-a254c54cb4f5)
 <br>
 
 # Create Companion Page
@@ -31,7 +29,7 @@
 <br>
 
 # Convo Page
-![project ss 3](https://github.com/Thakur-Sanskar-Anhal/minor-project/assets/75941858/73ed9a83-7d2f-497f-8d9e-6481f0facea7)
+![image](https://github.com/Thakur-Sanskar-Anhal/minor-project/assets/75941858/f0304237-d57e-4353-bc18-757ef7172fa5)
 <br>
 
 # Profile and no companion found
@@ -41,8 +39,6 @@
 # Acount Page
 ![image](https://github.com/Thakur-Sanskar-Anhal/minor-project/assets/75941858/437a3bdc-1d85-425c-811d-2a5f60e390a5)
 <br>
-
-
 
 
 
