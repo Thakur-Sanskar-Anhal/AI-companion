@@ -30,7 +30,7 @@ export async function POST(
         const companion = await prismadb.companion.update({
             where: {
                 id: params.chatId,
-                userId:user.id,
+                // userId:user.id,
             },
             data: {
                 messages: {
